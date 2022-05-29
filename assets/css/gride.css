@@ -1,0 +1,361 @@
+.header-bar {
+    /* height: 5vw; */
+    /* background-color: aquamarine; */
+    justify-content: center;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.logo img {
+    width: 7rem;
+    height: 6rem;
+}
+
+.logo {
+    padding: 2rem 1rem;
+}
+
+.cart i {
+    color: #84bf41;
+    font-size: 2.6rem;
+}
+
+.cart {
+    margin-top: 5rem;
+
+}
+
+.menu-humber {
+    font-size: 3rem;
+    margin-top: 4.4rem;
+    color: #84bf41;
+    margin-right: 1rem;
+}
+
+.navbar-menu li {
+    display: inline;
+    padding: 1vw 2.5vw;
+
+}
+
+.navbar-menu a {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.navbar-md a {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.navbar-md-items {
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-md li {
+    padding: 3vw 2.5vw;
+
+}
+
+.navbar-menu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar-md {
+    background-color: rgba(238, 238, 238, .85);
+    z-index: 1000;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    width: 100%;
+
+
+}
+
+.d-show {
+    display: inline;
+}
+
+.main-info {
+    margin: 0;
+    background-image: url(../images/9-best-cities-to-shop-for-mens-fashion\ \(1\).jpeg);
+    -webkit-filter: drop-shadow(0px 2px 0px rgba(244, 247, 249, 1));
+    filter: drop-shadow(0px 2px 0px rgba(244, 247, 249, 1));
+    height: 37rem;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.info-shop {
+
+    width: 25rem;
+    height: 25rem;
+    padding: 1.5rem;
+    background-color: rgba(238, 238, 238, .8);
+    position: absolute;
+    top: 8rem;
+    left: 12rem;
+    /* opaciy: .8; */
+}
+
+.line {
+    height: 8px;
+    width: 3rem;
+    background-color: #711A75;
+    margin-bottom: .5rem;
+    margin-top: 5rem;
+}
+
+.info-shop h1 {
+    color: #1b1a17;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn-order {
+    padding: .7rem;
+    border-radius: 10px;
+    background-color: #711A75;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
+.products-content {
+    /* width: 75%; */
+    margin: 0 auto;
+}
+
+.header-products {
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+}
+
+.header-products h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.product-item img {
+    width: 11rem;
+    height: 14rem;
+    transition: all .2s ease;
+
+}
+
+.product-row {
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+
+.slide {
+    transition: all .5s;
+}
+
+.product-item {
+    padding: 1.5rem 2rem;
+    border: 1px solid #dcdcdc;
+    width: calc(calc(100% / 4) - 10rem);
+    height: 25rem;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.product-item:hover img {
+    transform: scale(1.1);
+    opacity: .8;
+    animation: zoom 1s ease;
+}
+
+.product-item h3 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: .9rem;
+}
+
+.product-item p {
+    /* padding-left:0.2rem ; */
+    color: rgb(221, 53, 221);
+    font-weight: bold;
+}
+
+.detile-product a {
+    margin-right: 1rem;
+}
+
+.btn-cart {
+    padding: .2rem .62rem;
+    border-radius: 5px;
+    background-color: #711A75;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
+.btn-cart:hover {
+    background-color: #ffffff;
+    color: #711A75;
+    border: 1px solid #1b1a17;
+}
+
+.dots {
+    margin: 2rem 2rem;
+    text-align: center;
+}
+
+#dot1 {
+    background-color: #1b1a17;
+
+}
+
+.dot {
+    background-color: #dcdcdc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 2px;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.dot:hover {
+    background-color: #1b1a17;
+}
+
+.btn-cartmore {
+    float: right;
+}
+
+.subscript-content {
+    flex-direction: column;
+    align-items: center;
+    /* line-height: 3rem; */
+    height: 20rem;
+    background-color: #781678;
+    color: #ffffff;
+    width: 100%;
+}
+
+.line2 {
+    height: 8px;
+    width: 2.5rem;
+    background-color: #ede8ee;
+    margin-bottom: .5rem;
+    margin-top: 3rem;
+}
+
+.line-sub {
+    width: 10rem;
+    height: 50px;
+    color: #ffffff;
+    margin-top: 4rem;
+}
+
+.subscript-content p {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.subscript-content h4 {
+    margin-top: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+.subscript-content input[type="text"] {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: .5rem;
+    /* width:45%; */
+    margin-right: 1rem;
+}
+
+.subscript-content button {
+    padding: .5rem 1.8rem;
+    border-radius: 5px;
+    color: #711A75;
+    font-size: .8rem;
+    border: 0;
+    outline: 0;
+    width: 12rem;
+    transition: all .3s;
+}
+
+.subscript-content button:hover {
+    background-color: #e8d5e9;
+}
+
+.input-sub {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    resize: both;
+    overflow: auto;
+}
+
+.virtual-logo i {
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-right: 1.7rem;
+    margin-bottom: 8rem;
+    margin-top: 1.5rem;
+}
+
+footer a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: #a79e9e;
+    transition: all .4s;
+   
+}
+ .footer-menu{
+    margin-top: 3rem;
+ }
+.logo-footer {
+    width: 10rem;
+    height: 7rem;
+    margin-top: 1.5rem;
+}
+
+footer a:hover {
+    color: #781678;
+    text-decoration: none;
+}
+
+.virtual-logo img {
+    background-color: #dcd5d5;
+    margin: 2rem 2rem 2rem 0rem;
+    border-radius: 50%;
+    padding: .2rem;
+    transition: all .8s;
+}
+.virtual-logo img:hover {
+background-color: #781678;
+cursor: pointer;
+}
+
+.info-site span{
+    margin-left: .5rem;
+}
