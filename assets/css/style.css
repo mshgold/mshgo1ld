@@ -119,3 +119,17 @@ footer a {
     
     }
 }
+
+@media only screen and (max-width:479.98px) {
+    footer a {
+        font-size: .7rem;
+        margin-right:1rem;
+        text-decoration: none;
+        color: #a79e9e;
+        transition: all .4s;
+    
+    }
+    .info-site span,p{
+        font-size: .6rem;
+     }
+}
