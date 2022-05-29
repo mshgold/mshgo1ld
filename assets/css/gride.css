@@ -2,7 +2,9 @@
     /* height: 5vw; */
     /* background-color: aquamarine; */
     justify-content: center;
+    align-items: center;
     border-bottom: 2px solid #dcdcdc;
+    /* width: 100%; */
 }
 
 .logo img {
@@ -24,7 +26,10 @@
 
 }
 
+.icon-humber {}
+
 .menu-humber {
+    /* font-size: 3rem; */
     font-size: 3rem;
     margin-top: 4.4rem;
     color: #84bf41;
@@ -98,7 +103,7 @@
 
 .info-shop {
 
-    width: 25rem;
+    width: 30%;
     height: 25rem;
     padding: 1.5rem;
     background-color: rgba(238, 238, 238, .8);
@@ -311,9 +316,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    resize: both;
-    overflow: auto;
-}
+   }
 
 .virtual-logo i {
     font-size: 2rem;
@@ -324,15 +327,18 @@ footer {
 }
 
 footer a {
+    font-size: 1rem;
     margin-right: 3rem;
     text-decoration: none;
     color: #a79e9e;
     transition: all .4s;
-   
+
 }
- .footer-menu{
+
+.footer-menu {
     margin-top: 3rem;
- }
+}
+
 .logo-footer {
     width: 10rem;
     height: 7rem;
@@ -351,11 +357,12 @@ footer a:hover {
     padding: .2rem;
     transition: all .8s;
 }
+
 .virtual-logo img:hover {
-background-color: #781678;
-cursor: pointer;
+    background-color: #781678;
+    cursor: pointer;
 }
 
-.info-site span{
+.info-site span {
     margin-left: .5rem;
 }
