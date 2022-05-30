@@ -92,6 +92,7 @@ ul {
     color: #84bf41;
     font-size: 2rem;
 }
+
 .logo img {
     width: 5rem;
     height: 4rem;
@@ -112,6 +113,22 @@ footer a {
     transition: all .4s;
 
 }
+.subscript-content h4 {
+    font-size: 4vw;
+    margin-top: .8rem;
+    margin-bottom: 1.5rem;
+}
+.subscript-content input[type="text"] {
+  
+    width:50%;
+   
+
+.subscript-content button {
+  
+    width: 35%;
+   
+}
+
 }
 @media only screen and (max-width:1199.98px) {
     .product-item {

@@ -27,3 +27,14 @@ function showslid1() {
     dot2.style.backgroundColor="#dcdcdc";
     dot.style.backgroundColor="#1b1a17";
 }
+
+var addcart=document.getElementById("add-cart");
+function addcart(){
+var contercart=document.getElementById('conter-product');
+    // debugger;
+    var i=contercart.innerHTML;
+    i++;
+    contercart.innerHTML=i;
+
+
+}

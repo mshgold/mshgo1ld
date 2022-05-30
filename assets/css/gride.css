@@ -26,7 +26,15 @@
 
 }
 
-.icon-humber {}
+.cart span {
+    background-color: #84bf41;
+    padding: 0px 8px;
+    color: #ffffff;
+    font-size: 2.rem;
+    border-radius: 50%;
+    top: -15px;
+    right: -8px;
+}
 
 .menu-humber {
     /* font-size: 3rem; */
@@ -286,7 +294,7 @@
     border: 1px solid #ffffff;
     border-radius: 5px;
     padding: .5rem;
-    /* width:45%; */
+    /* width:50%; */
     margin-right: 1rem;
 }
 
@@ -297,7 +305,8 @@
     font-size: .8rem;
     border: 0;
     outline: 0;
-    width: 12rem;
+    /* width: 35%; */
+    /* font-size: 3vw; */
     transition: all .3s;
 }
 
@@ -316,8 +325,11 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-   }
+}
 
+.virtual-logo  {
+/* width: 50%; */
+}
 .virtual-logo i {
     font-size: 2rem;
     border-radius: 50%;

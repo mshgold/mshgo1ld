@@ -20,8 +20,9 @@
                 <div class="logo">
                     <img src="assets/images/logo.jpg" alt="">
                 </div>
-                <div class="cart">
+                <div class="cart position-relative">
                     <i class="fas fa-shopping-cart"></i>
+                    <span id="conter-product" class="position-absolute">0</span>
                 </div>
             </div>
             <div id="hummermenu" class="menu-humber ">
@@ -29,7 +30,8 @@
                     <i class="fas fa-bars" onclick="showmenu()"></i>
                 </span>
                 <span class="">
-                    <i class="far fa-window-close  d-none"></i>
+                    <i class="far fa-window-close   d-none"></i>
+                    
                 </span>
 
             </div>
@@ -85,7 +87,7 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input type="button" class="btn-cart" value="Add to cart">
+                                <input id="add-cart" onclick="addcart()" type="button" class="btn-cart" value="Add to cart">
                             </div>
                         </div>
                         <div class="product-item d-flex pointer">
