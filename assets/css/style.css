@@ -87,6 +87,15 @@ ul {
 .menu-humber{
     font-size: 1.8rem;
 }
+.navbar-md {
+    z-index: 1000;
+    top: 6rem;
+    right: 0;
+    width: 100%;
+
+
+}
+
 
 .cart i {
     color: #84bf41;
@@ -103,6 +112,7 @@ ul {
 .header-bar{
     width: 100%;
     margin: 0 auto;
+    margin-top: -2rem;
 }
 
 footer a {
