@@ -6,7 +6,7 @@ function showmenu() {
     var mhumber = document.getElementById("navbar-md");
     if (mhumber.className === "navbar-md d-md-none d-none") {
         mhumber.className += "d-show"
-        iconclose.className = "d-show"
+        iconclose.className = "d-show d-md-none"
         iconhumber.className = "d-none"
         console.log(mhumber.className);
     } else {
@@ -20,12 +20,12 @@ function closemenu(){
     var mhumber = document.getElementById("navbar-md");
     if (mhumber.className === "navbar-md d-md-none d-none d-show") {
         mhumber.className += "d-none"
-        iconclose.className = "d-none"
-        iconhumber.className = "d-show"
+        iconclose.className = "d-none d-md-none"
+        iconhumber.className = "d-show d-md-none"
     } else {
         mhumber.className = "navbar-md d-md-none d-none";
-        iconclose.className = "d-none"
-        iconhumber.className = "d-show"
+        iconclose.className = "d-none d-md-none"
+        iconhumber.className = "d-show d-md-none"
     }
 }
 showpro();
