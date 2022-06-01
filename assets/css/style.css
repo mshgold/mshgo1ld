@@ -141,7 +141,7 @@ footer a {
     /* width: 35%; */
 }
 .product-row {
-    width: 400px;
+    width: 290px;
     overflow: scroll;
 }
 ::-webkit-scrollbar{
