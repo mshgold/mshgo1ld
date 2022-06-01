@@ -141,8 +141,9 @@ footer a {
     /* width: 35%; */
 }
 .product-row {
-    width: 290px;
+    width: 326px;
     overflow: scroll;
+    margin-left: -4rem;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -178,7 +179,10 @@ footer a {
         outline: none;
         color: white;
         text-align: center;
-        font-size: .5rem;
+        font-size: .8rem;
+    }
+    .detile-product a {
+       display: none;
     }
     
 }
