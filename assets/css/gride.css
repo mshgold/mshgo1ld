@@ -111,13 +111,13 @@
 
 .info-shop {
 
-    width: 30%;
-    height: 25rem;
+    width: 30rem;
+    height: 26rem;
     padding: 1.5rem;
     background-color: rgba(238, 238, 238, .8);
     position: absolute;
-    top: 8rem;
-    left: 12rem;
+    top: 4rem;
+    left: 8rem;
     /* opaciy: .8; */
 }
 
@@ -148,6 +148,7 @@
 .products-content {
     /* width: 75%; */
     margin: 0 auto;
+    /* width:800px ; */
 }
 
 .header-products {
@@ -168,11 +169,28 @@
 }
 
 .product-row {
-    /* width: 100%; */
-    overflow: hidden;
+    /* width: 800px; */
+    /* overflow: scroll; */
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    /* display: none; */
+    background: transparent; /* make scrollbar transparent */
+    width: 0px;
+}
+html{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+   
 }
 
-
+.container {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
 .slide {
     transition: all .5s;
 }

@@ -44,9 +44,8 @@ ul {
 
 @media only screen and (max-width:575.98px) {
     .info-shop {
-
-        width: 85%;
-        height: 25rem;
+        width: 65%;
+        height: 22rem;
         padding: 1.5rem;
         top: 2rem;
         left: 1.5rem;
@@ -64,6 +63,10 @@ ul {
     .line {
        
         margin-top: 3rem;
+    }
+    .main-info{
+        flex-wrap: nowrap;
+       
     }
     .subscript-content p {
         text-align: center;
@@ -113,8 +116,8 @@ ul {
     width: 100%;
     margin: 0 auto;
     margin-top: -2rem;
-    position: fixed;
-    z-index: 1000;
+    /* position: fixed; */
+    /* z-index: 1000; */
     background-color: #ffffff;
 }
 
@@ -134,14 +137,16 @@ footer a {
 .subscript-content input[type="text"] {
   
     width:50%;
-   
 
-.subscript-content button {
-  
-    width: 35%;
-   
+    /* width: 35%; */
 }
-
+.product-row {
+    width: 400px;
+    overflow: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
 }
 @media only screen and (max-width:1199.98px) {
     .product-item {
