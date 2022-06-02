@@ -40,7 +40,6 @@ function showslid2() {
 function showslid1() {
     var slid1 = document.getElementById("slide");
     var dot = document.getElementById("dot1");
-    debugger;
     slid1.style.marginLeft = "0px";
     var dot = document.getElementById("dot1");
     dot2.style.backgroundColor = "#dcdcdc";

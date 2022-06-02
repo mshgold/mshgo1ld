@@ -140,11 +140,7 @@ footer a {
 
     /* width: 35%; */
 }
-.product-row {
-    width: 326px;
-    overflow: scroll;
-    margin-left: -4rem;
-}
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -155,14 +151,14 @@ footer a {
     
     }
 
-    .product-item {
+    /* .product-item {
         padding: .8rem 1.2rem;
         border: 1px solid #dcdcdc;
         width: calc(calc(100% / 4) - 10rem);
         height: 25rem;
         align-items: flex-start;
         flex-direction: column;
-    }
+    } */
 
     .product-item img {
         width: 8rem;
