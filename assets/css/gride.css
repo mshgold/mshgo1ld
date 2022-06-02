@@ -200,7 +200,7 @@ html{
     padding: 1.5rem 2rem;
     border: 1px solid #dcdcdc;
     width: 12rem;
-    height: 21rem;
+    height: 20rem;
     align-items: flex-start;
     flex-direction: column;
 }
@@ -213,7 +213,7 @@ html{
 
 .product-item h3 {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: .8rem;
     padding-top: .9rem;
 }
 
