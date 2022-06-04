@@ -29,14 +29,14 @@
                 <span id="icon-humber" class="d-inline d-md-none">
                     <i class="fas fa-bars" onclick="showmenu()"></i>
                 </span>
-                <span id="closemenu"  class="d-none d-md-none" onclick="closemenu()">
+                <span id="closemenu" class="d-none d-md-none" onclick="closemenu()">
                     <i class="far fa-window-close "></i>
-                    
+
                 </span>
 
             </div>
         </div>
-       <div class="navbar position-relative">
+        <div class="navbar position-relative">
             <ul class="navbar-menu">
                 <li><a href="#">Home</a> </li>
                 <li><a href="#">Products</a> </li>
@@ -53,7 +53,7 @@
             </ul>
         </div>
     </header>
-   <main>
+    <main>
         <section>
             <div class="main-info d-flex">
                 <div class="info-shop">
@@ -72,7 +72,7 @@
             </div>
         </section>
         <section>
-            <div class="products-content col-8 col-sm-4 offset-2">
+            <div class="products-content ">
                 <div class="header-products">
                     <div class="line"></div>
                     <h2 class="ml-6">Featured Items</h2>
@@ -87,8 +87,16 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input id="add-cart" onclick="addcart()" type="button" class="btn-cart" value="Add to cart">
+                                <input id="0" onclick="addbutton(this)" type="button" class="btn-cart"
+                                    value="Add to cart">
                             </div>
+                            <!-- <div id="btns-counter" class="button-counter">
+                                <button class="bnt-counter" style="padding: 0 .2rem;">
+                                    <img class="img-counter" src="assets/images/delete.svg" alt="">
+                                </button>
+                                <span class="span-counter">1</span>
+                                <button class="bnt-counter">+</button>
+                            </div> -->
                         </div>
                         <div class="product-item d-flex pointer">
                             <img class="product-img" src="assets/images/produts/2.jpg" alt="">
@@ -98,7 +106,7 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input type="button" class="btn-cart" value="Add to cart">
+                                <input id="1" onclick="addbutton(this)" type="button" class="btn-cart" value="Add to cart">
                             </div>
                         </div>
                         <div class="product-item  d-flex pointer">
@@ -109,7 +117,7 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input type="button" class="btn-cart" value="Add to cart">
+                                <input id="2" onclick="addbutton(this)" type="button" class="btn-cart" value="Add to cart">
                             </div>
                         </div>
                         <div class="product-item d-flex pointer">
@@ -120,7 +128,7 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input type="button" class="btn-cart" value="Add to cart">
+                                <input id="3" onclick="addbutton(this)" type="button" class="btn-cart" value="Add to cart">
                             </div>
                         </div>
                         <div class="product-item  d-flex pointer">
@@ -131,7 +139,7 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input type="button" class="btn-cart" value="Add to cart">
+                                <input id="4" onclick="addbutton(this)" type="button" class="btn-cart" value="Add to cart">
                             </div>
                         </div>
                         <div class="product-item  d-flex pointer">
@@ -142,7 +150,7 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input type="button" class="btn-cart" value="Add to cart">
+                                <input id="5" onclick="addbutton(this)" type="button" class="btn-cart" value="Add to cart">
                             </div>
                         </div>
                         <div class="product-item  d-flex pointer">
@@ -153,7 +161,7 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input type="button" class="btn-cart" value="Add to cart">
+                                <input id="6" onclick="addbutton(this)" type="button" class="btn-cart" value="Add to cart">
                             </div>
                         </div>
                         <div class="product-item  d-flex pointer">
@@ -164,17 +172,22 @@
                             </div>
                             <div class="detile-product">
                                 <a href="#">Details</a>
-                                <input type="button" class="btn-cart" value="Add to cart">
+                                <input id="7" onclick="addbutton(this)" type="button" class="btn-cart" value="Add to cart">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="dots">
-                    <span id="dot1" class="dot pointer" onclick="showslid1()"></span>
-                    <span id="dot2" class="dot pointer" onclick="showslid2()"></span>
+                <div class="dots1  ">
+                    <div>
+                        <span id="dot" class="dot pointer" onclick="showslid1()"></span>
+                        <span id="dot" class="dot pointer" onclick="showslid2()"></span>
+                        <span id="dot" class="dot pointer" onclick="showslid2()"></span>
+                        <span id="dot" class="dot pointer" onclick="showslid2()"></span>
+                    </div>
                     <input type="button" class="btn-cartmore btn-cart" value="See More">
 
                 </div>
+
             </div>
         </section>
         <section class="subscript">
@@ -191,7 +204,7 @@
             </div>
         </section>
     </main>
-  <footer class="">
+    <footer class="">
         <div class="logo-footer">
             <img class="logo-footer" src="assets/images/logo.jpg" alt="">
         </div>
@@ -209,7 +222,7 @@
             <span><img src="assets/images/twitter.svg" alt=""></span>
             <span><img src="assets/images/linkedin.svg" alt=""></span>
             <span><img src="assets/images/rss.svg" alt=""></span>
-           
+
         </div>
         <div class="info-site d-flex">
             <p>COPYRIGHT © 2022 ONLINESHOP - DEVEOPED BY </p>
