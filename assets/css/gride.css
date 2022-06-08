@@ -458,7 +458,7 @@ footer a:hover {
 
 .main-cart {
     flex-direction: column;
-    min-height: 60vh;
+    min-height: 80vh;
     background-color: #F5F6FA;
     display: flex;
     /* align-items: flex-start; */
