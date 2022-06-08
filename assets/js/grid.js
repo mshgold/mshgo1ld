@@ -28,7 +28,6 @@ function closemenu() {
         iconhumber.className = "d-show d-md-none"
     }
 }
-// showpro();
 function showslid2() {
     var slid1 = document.getElementById("slide");
     var dot = document.getElementById("dot1");
@@ -53,12 +52,13 @@ function addcart() {
     // debugger;
     var i = contercart.innerHTML;
     i++;
-    contercart.innerHTML = i;
+    // contercart.innerHTML = i;
+    countercart();
     document.getElementById("btns-counter").className += "d-show";
     addcart.className = "d-none";
-
-
 }
+var contercart = document.getElementById('conter-product');
+
 addbutton();
 function addbutton(btncart) {
     const div1 = document.createElement("div");
@@ -67,6 +67,8 @@ function addbutton(btncart) {
     const btnadd = document.createElement("button");
     const btnless = document.createElement("button");
     const span = document.createElement("span");
+    var product;
+    var x = 0, y = 1, counter = 0;
     var items = document.getElementsByClassName("product-item");
     for (var i = 0; i < 8; i++) {
         if (i == btncart.id) {
@@ -76,52 +78,93 @@ function addbutton(btncart) {
             btn.style.padding = " 0 .2rem";
             btn.appendChild(img);
             div1.appendChild(btn);
-
             span.className = "span-counter";
             span.innerHTML = "1";
+            contercart.innerHTML = span.innerHTML;
             div1.appendChild(span);
             btnadd.className = "bnt-counter";
             btnadd.innerHTML = "+";
             div1.appendChild(btnadd);
             items[i].appendChild(div1);
             btncart.style.display = "none";
+            countercart();
+
         }
     }
     btn.addEventListener("click", showbtncart);
     function showbtncart() {
         btncart.style.display = "flex";
+        div1.removeChild(span);
         div1.style.display = "none";
+        countercart();
     }
-    // debugger;
 
     btnadd.addEventListener("click", addcart);
-    var x = 0, y = 1;
 
     function addcart() {
-        // btn.style.display = "none";
         btnless.className = "bnt-counter";
         btnless.innerHTML = "-";
-        // btnless.display.float="left";
-
-        console.log(x);
-        // debugger;
         if (!(div1.firstChild.isSameNode(btnless))) {
             div1.replaceChild(btnless, btn);
-          
         }
         y += 1;
         x += 1;
         span.innerHTML = y.toString();
+        countercart();
         x++;
-
     }
     btnless.addEventListener("click", lesscart);
     function lesscart() {
-        if(y==2){
-            div1.replaceChild(btn,btnless);
+        if (y == 2) {
+            div1.replaceChild(btn, btnless);
+            countercart();
         }
-        console.log(y);
-        y-=1;
+        y -= 1;
         span.innerHTML = y.toString();
+        countercart();
     }
+
 }
+function countercart() {
+    const nodeList = document.querySelectorAll(".product-item span");
+    counter = 0;
+    for (var i = 0; i < nodeList.length; i++) {
+        counter += eval(nodeList[i].innerHTML);
+        console.log(nodeList[i].innerHTML);
+    }
+    contercart.innerHTML = counter.toString();
+
+}
+
+function addjson() {
+    var product = {
+        name: "test",
+        src: "assets/images/produts/1.jpg",
+        price: "199.5",
+        number: "5"
+    };
+    localStorage.setItem("lastname", "Smith");
+    localStorage.setItem("lastname", "reza");
+    localStorage.setItem("lastname", "sharifi");
+    localStorage.setItem("lastname", "frontjs.ir");
+    // console.log(localStorage.getItem("lastname"));
+    // const myjson=JSON.stringify(product);
+    // localStorage.setItem("products.json",myjson);
+    // if (window.XMLHttpRequest)
+    // {// code for IE7+, Firefox, Chrome, Opera, Safari
+    // xmlhttp=new XMLHttpRequest();
+    // }
+    // else
+    // {// code for IE6, IE5
+    // xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    // }
+    // xmlhttp.open("GET","data.xml",false);
+    // xmlhttp.send();
+    // xmlDoc=xmlhttp.responseXML;
+    // //saving XML from document input fields
+    // xmlDoc.getElementsByTagName("Name")[0].firstChild = "reza";
+    // xmlDoc.getElementsByTagName("shortname")[0].childNodes[0].nodeValue = "sharifi";
+    // xmlDoc.getElementsByTagName("reknown")[0].childNodes[0].nodeValue = "frontjs.ir";
+    // xmlDoc.save();
+}
+
