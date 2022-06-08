@@ -462,7 +462,7 @@ footer a:hover {
     background-color: #F5F6FA;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .title-first {
