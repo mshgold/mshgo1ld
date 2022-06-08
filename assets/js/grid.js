@@ -136,6 +136,9 @@ function countercart() {
 
 }
 
+function showcart(){
+    window.location="cart.html"
+}
 function addjson() {
     var product = {
         name: "test",
