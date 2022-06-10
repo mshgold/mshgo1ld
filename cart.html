@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body onload="loadcart()">
     <header>
         <div class="header-bar d-flex">
             <div class="logo-cart d-flex">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="cart position-relative">
                     <i class="fas fa-shopping-cart"></i>
-                    <span id="conter-product" class="position-absolute">0</span>
+                    <span id="conter-product-cart" class="position-absolute">0</span>
                 </div>
             </div>
             <div id="hummermenu" class="menu-humber ">
@@ -60,15 +60,15 @@
                 <button class="btn-cart">Go to shop</button>
             </div>
             <div class="checkout">
-                <p>Total Items: <span>2</span></p>
+                <p>Total Items: <span id="total-items">2</span></p>
                 <p>Total Payments: <span>44.55$</span></p>
                 <div class="d-flex justify-content-between">
                     <p>clear</p>
                     <button class="btn-cart">Checkout</button>
                 </div>
             </div>
-            <div class="product-items d-flex">
-                <div>
+            <!-- <div class="product-items d-flex"> -->
+                <!-- <div>
                     <img class="" src="assets/images/produts/1.jpg" alt="">
                 </div>
                 <div class="title-product-items">
@@ -77,41 +77,13 @@
                 </div>
                 <span class="span-counter">1</span>
                 <div>
-                    <button class="bnt-counter" style="padding: 0 .2rem;">-</button>
+                    <button class="bnt-counter btn-cartless">-</button>
                     <button class="bnt-counter">+</button>
 
-                </div>
-            </div>
-            <div class="product-items d-flex">
-                <div>
-                    <img class="" src="assets/images/produts/1.jpg" alt="">
-                </div>
-                <div class="title-product-items">
-                    <h3>Fjallraven Foldsack</h3>
-                    <p>109.95$</p>
-                </div>
-                <span class="span-counter">1</span>
-                <div>
-                    <button class="bnt-counter" style="padding: 0 .2rem;">-</button>
-                    <button class="bnt-counter">+</button>
-
-                </div>
-            </div>
-            <div class="product-items d-flex">
-                <div>
-                    <img class="" src="assets/images/produts/1.jpg" alt="">
-                </div>
-                <div class="title-product-items">
-                    <h3>Fjallraven Foldsack</h3>
-                    <p>109.95$</p>
-                </div>
-                <span class="span-counter">1</span>
-                <div>
-                    <button class="bnt-counter" style="padding: 0 .2rem;">-</button>        
-                    <button class="bnt-counter">+</button>
-
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
+            
+           
         </section>
 
         <section class="subscript">
@@ -158,6 +130,7 @@
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/grid.js"></script>
+    <script src="assets/js/cart.js"></script>
 
 </body>
 

@@ -30,7 +30,7 @@
     background-color: #84bf41;
     padding: 0px 8px;
     color: #ffffff;
-    font-size: 2.rem;
+    font-size: 1rem;
     border-radius: 50%;
     top: -15px;
     right: -8px;
@@ -518,4 +518,11 @@ justify-content: space-between;    align-items: center;
 }
 .title-product-items{
     padding: 1rem 0;
+}
+.btn-cartless{
+    padding: .05rem .5rem;
+    margin-right: .3rem;
+}
+.product-items span{
+    padding: .1rem .5rem;
 }

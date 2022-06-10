@@ -88,6 +88,7 @@ function addbutton(btncart) {
             items[i].appendChild(div1);
             btncart.style.display = "none";
             countercart();
+            localStorage.setItem("idproduct" + i, i.toString())
 
         }
     }
@@ -130,44 +131,46 @@ function countercart() {
     counter = 0;
     for (var i = 0; i < nodeList.length; i++) {
         counter += eval(nodeList[i].innerHTML);
-        console.log(nodeList[i].innerHTML);
+        // console.log(nodeList[i].innerHTML);
     }
     contercart.innerHTML = counter.toString();
+    localStorage.setItem("totalitems", counter.toString());
+}
+
+function showcart() {
+    localStorage.clear();
+
+    const nodeListcart = document.querySelectorAll(".product-item");
+    for (var i = 0; i < nodeListcart.length; i++) {
+        // debugger;
+        if (nodeListcart[i].children.length > 3) {
+            localStorage.setItem("idproduct" + i, i);
+            localStorage.setItem("spantext" + i, nodeListcart[i].children[3].childNodes[1].innerHTML);
+            // console.log(localStorage.getItem("spantext"+i));
+        }
+    }
+    window.location = "cart.html";
+    // loadcart();
 
 }
 
-function showcart(){
-    window.location="cart.html"
+function loadcart() {
+    var sumproduct = 0
+    // debugger;
+    // console.log("fdfdf");
+    // showcart();
+    var totalitems = document.getElementById("total-items");
+    var cproductcart = document.getElementById("conter-product-cart");
+    cproductcart.innerHTML = localStorage.getItem("totalitems");
+    for (var i = 0; i < 8; i++) {
+        console.log(localStorage.getItem("idproduct" + i), localStorage.getItem("spantext" + i));
+        sumproduct += eval(localStorage.getItem("spantext" + i));
+    }
+    cproductcart.innerHTML = sumproduct.toString();
+    totalitems.innerHTML = sumproduct.toString();
+    // debugger;
+    receivejson();
 }
-function addjson() {
-    var product = {
-        name: "test",
-        src: "assets/images/produts/1.jpg",
-        price: "199.5",
-        number: "5"
-    };
-    localStorage.setItem("lastname", "Smith");
-    localStorage.setItem("lastname", "reza");
-    localStorage.setItem("lastname", "sharifi");
-    localStorage.setItem("lastname", "frontjs.ir");
-    // console.log(localStorage.getItem("lastname"));
-    // const myjson=JSON.stringify(product);
-    // localStorage.setItem("products.json",myjson);
-    // if (window.XMLHttpRequest)
-    // {// code for IE7+, Firefox, Chrome, Opera, Safari
-    // xmlhttp=new XMLHttpRequest();
-    // }
-    // else
-    // {// code for IE6, IE5
-    // xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-    // }
-    // xmlhttp.open("GET","data.xml",false);
-    // xmlhttp.send();
-    // xmlDoc=xmlhttp.responseXML;
-    // //saving XML from document input fields
-    // xmlDoc.getElementsByTagName("Name")[0].firstChild = "reza";
-    // xmlDoc.getElementsByTagName("shortname")[0].childNodes[0].nodeValue = "sharifi";
-    // xmlDoc.getElementsByTagName("reknown")[0].childNodes[0].nodeValue = "frontjs.ir";
-    // xmlDoc.save();
-}
+
+
 

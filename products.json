@@ -1,51 +1,51 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "name": "Fjallraven Foldsack",
         "price": 109.95,
         "src": "assets/images/produts/1.jpg"
     },
      {
-        "id": 2,
+        "id": 1,
         "name": "Mens Casual",
         "price": 22.3,
         "src": "assets/images/produts/2.jpg"
     },
      {
-        "id": 3,
+        "id": 2,
         "name": "Mens Cotton",
         "price": 55.99,
         "src": "assets/images/produts/3.jpg"
     },
      {
-        "id":4 ,
+        "id":3,
         "name": "Mens Casual",
         "price": 15.99,
         "src": "assets/images/produts/4.jpg"
     },
      {
-        "id": 5,
+        "id": 4,
         "name": "Mens Casual",
         "price": 15.99,
         "src": "assets/images/produts/5.jpg"
     },
      {
-        "id": 6,
+        "id": 5,
         "name": "John Hardy",
         "price": 695,
         "src": "assets/images/produts/6.jpg"
     },
      {
-        "id": 7,
+        "id": 6,
         "name": "Solid Gold",
         "price": 108,
         "src": "assets/images/produts/7.jpg"
     },
      {
-        "id": 8,
+        "id": 7,
         "name": "White Gold",
         "price": 9.99,
         "src": "assets/images/produts/8.jpg"
-    },
+    }
     
 ]
